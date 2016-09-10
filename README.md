@@ -26,6 +26,14 @@ var checkUrl = require('valid_url');
 checkUrl("yabirgb.com")
 ```
 
+## Changelog
+
+### 1.1.1
+Fixed minor errors in regex
+
+### 1.0.4
+Initial package
+
 ## License
 
 MIT
