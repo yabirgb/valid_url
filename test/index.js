@@ -37,13 +37,16 @@ assert.equal(validUrl(url), true);
 var url = "d1f4470da51b49289906b3d6cbd65074@app.getsentry.com/13176"
 assert.equal(validUrl(url), true);
 
-var url = "mongodb://u:p@example.com:21332/mydb"
-assert.equal(validUrl(url), true);
-
-var url = "wss://secure.example.com/biz"
+var url = "ftp://test@example.com"
 assert.equal(validUrl(url), true);
 
 //Not valid
+
+var url = "mongodb://u:p@example.com:21332/mydb"
+assert.equal(validUrl(url), false);
+
+var url = "wss://secure.example.com/biz"
+assert.equal(validUrl(url), false);
 
 var url = "google"
 assert.equal(validUrl(url), false);
@@ -61,6 +64,15 @@ var url = "http://www.google"
 assert.equal(validUrl(url), false);
 
 var url = "https://www.google"
+assert.equal(validUrl(url), false);
+
+var url = "htt://google.es"
+assert.equal(validUrl(url), false);
+
+var url = "htt://www.google.es"
+assert.equal(validUrl(url), false);
+
+var url = "htt://google"
 assert.equal(validUrl(url), false);
 
 var url = ""

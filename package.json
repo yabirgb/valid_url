@@ -1,6 +1,6 @@
 {
   "name": "valid_url",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A project to check valid urls",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,6 @@
   "keywords": [
     "valid",
     "url",
-    "node",
     "check",
     "http",
     "https"
